@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/keyi">
+
+
+    <Button
+        android:id="@+id/keyi_kaotilianxi"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="138dp"
+        android:background="@drawable/beijing"
+        android:text="考题练习"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/keyi_monilianxi"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="138dp"
+        android:text="模拟练习"
+        android:textColor="#ffffff"
+        android:background="@drawable/beijing"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp" />
+
+    <TextView
+        android:id="@+id/keyi_cuotiben"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/beijing"
+        android:textColor="#ffffff"
+        android:text="错题本"
+        android:layout_below="@+id/keyi_kaotilianxi"
+        android:layout_alignLeft="@+id/keyi_kaotilianxi"
+        android:layout_alignStart="@+id/keyi_kaotilianxi" />
+
+    <TextView
+        android:id="@+id/keyi_shoucangjia"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/beijing"
+        android:textColor="#ffffff"
+        android:text="收藏夹"
+        android:layout_alignBaseline="@+id/keyi_cuotiben"
+        android:layout_alignBottom="@+id/keyi_cuotiben"
+        android:layout_alignRight="@+id/keyi_kaotilianxi"
+        android:layout_alignEnd="@+id/keyi_kaotilianxi" />
+
+    <TextView
+        android:id="@+id/keyi_weizuoti"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/beijing"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/keyi_shoucangjia"
+        android:layout_alignLeft="@+id/keyi_monilianxi"
+        android:layout_alignStart="@+id/keyi_monilianxi"
+        android:text="未做题" />
+
+    <TextView
+        android:id="@+id/keyi_yipaichu"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/beijing"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/keyi_weizuoti"
+        android:layout_alignEnd="@+id/keyi_monilianxi"
+        android:layout_alignRight="@+id/keyi_monilianxi"
+        android:text="已排除" />
+
+</RelativeLayout>

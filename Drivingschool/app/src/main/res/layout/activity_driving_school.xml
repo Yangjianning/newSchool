@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yang.drivingschool.Driving_school">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/beijing"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/main_rentou"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/rentou" />
+
+            <TextView
+                android:id="@+id/main_baoming"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:text="报名"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/main_keyi"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:text="科一"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/main_keer"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:text="科二"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/main_kesan"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:text="科三"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/main_kesi"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:text="科四"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/main_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/dibu"
+           >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fram"
+        android:name="Activity.RenTouFrament"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        >
+
+    </fragment>
+
+</android.support.v4.widget.DrawerLayout>
